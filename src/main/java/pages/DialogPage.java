@@ -68,7 +68,6 @@ public class DialogPage extends BasePage {
         String formattedDate = nextDay.format(formatter);
         return formattedDate;
     }
-
     public String getViewedDate() {
         return driver.findElement(viewedDate).getText();
     }

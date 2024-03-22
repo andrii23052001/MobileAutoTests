@@ -25,6 +25,7 @@ public class MobileTests extends BaseTest {
         Assert.assertEquals(dialogPage.getViewedDate(), dialogPage.getNextDayExpected() + " 23:11", "The expected date does not match the actual date");
     }
 
+
     @Test(description = "Check 'next' button functionality and number")
     public void clickNextAndCheckNumber() {
         int numberOfClicks = new Random().nextInt(5, 11);
