@@ -1,5 +1,4 @@
 import base.BaseTest;
-import org.springframework.format.annotation.DateTimeFormat;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -21,7 +20,7 @@ public class MobileTests extends BaseTest {
                 .selectNextDayInCalendar()
                 .clickConfirmButton()
                 .clickChangeTheTime()
-                .setDataAndTime()
+                .setDataAndTime(11,11,"PM")
                 .clickConfirmButton();
         Assert.assertEquals(dialogPage.getViewedDate(), dialogPage.getNextDayExpected() + " 23:11", "The expected date does not match the actual date");
     }
